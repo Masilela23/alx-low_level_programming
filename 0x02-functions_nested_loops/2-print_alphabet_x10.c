@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * print_alphabet x10- lower case
+ * print_alphabet_x10 - lower case
  * Return: void
  */
 
 void print_alphabet_x10(void)
+
 {
 
 	char c;
