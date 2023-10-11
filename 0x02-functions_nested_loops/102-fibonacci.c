@@ -15,7 +15,7 @@ int main(void)
 	while (i < 50)
 	{
 	if (i == 0)
-		printf(", %ld", j);
+		printf("%ld", j);
 	else if (i == 1)
 		printf(", %ld", k);
 	else
@@ -24,7 +24,7 @@ int main(void)
 		j = k - j;
 		printf(", %ld", k);
 	}
-	++i;
+	i++;
 	}
 	printf("\n");
 	return (0);
