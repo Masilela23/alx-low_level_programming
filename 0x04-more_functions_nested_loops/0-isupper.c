@@ -2,13 +2,13 @@
 
 /**
  * _isupper - check letter
- * @x: the number to be checked
+ * @c: the number to be checked
  * Return: 1 for upper or 0 for any other
  */
 
-int _supper(int x)
+int _supper(int c)
 {
-	if (x >= 65 && x <= 90)
+	if (c >= 65 && c <= 90)
 	{
 	return (1);
 	}
