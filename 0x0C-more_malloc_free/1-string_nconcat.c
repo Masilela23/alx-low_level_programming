@@ -38,7 +38,7 @@ if (s1 == NULL)
 	if (y > n)
 		y = n;
 	ptr = malloc(sizeof(char) * (x + y + 1));
-	if (s == NULL)
+	if (ptr == NULL)
 		return (NULL);
 	for (m = 0; m < x; m++)
 	ptr[m] = s1[m];
