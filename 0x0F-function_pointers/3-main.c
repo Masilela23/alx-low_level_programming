@@ -11,7 +11,7 @@
 
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
-	int x; 
+	int x;
 	int y;
 	char *ptr;
 
