@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 
 	ptr = (char *)main;
 
-	for (m = 0; m < bytes; m++)
+	for (m = 0; m < b; m++)
 	{
 		if (m == b - 1)
 		{
