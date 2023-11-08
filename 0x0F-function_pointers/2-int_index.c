@@ -1,7 +1,7 @@
 #include "function_pointers.h"
 
 /**
-* int_index - this functn returns index 
+* int_index - this functn returns index
 * place if comparison = true, else -1
 * @array: array
 * @size: elemt in array
