@@ -3,7 +3,7 @@
 /**
  * listint_len - this functn returns the nr
  * of elements in a linked lists
- * 
+ *
  * @h: linkd list of listint_t to traverse
  *
  * Return: nr of nodes

@@ -3,7 +3,7 @@
 /**
  * insert_nodeint_at_index - this functn inserts a new node
  * in a linked list, at a given position
- * 
+ *
  * @head: pntr to the 1st node in the list
  * @idx: index where the new node is added
  * @n: data to insert in the new node

@@ -20,8 +20,8 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	if (mel == NULL)
 		return (NULL);
 
- 	mel->n = n;
- 	mel->next = NULL;
+	mel->n = n;
+	mel->next = NULL;
 	nom = *head;
 
 	if (*head == NULL)

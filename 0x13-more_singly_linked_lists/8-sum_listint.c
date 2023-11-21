@@ -3,7 +3,7 @@
 /**
  * sum_listint - this functn calculates the sum of all
  * the data in a listint_t list
- * 
+ *
  * @head: 1st node in the linked list
  *
  * Return: int

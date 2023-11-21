@@ -3,7 +3,7 @@
 /**
  * delete_nodeint_at_index - this functn deletes a node in
  * a linked list at a certain index
- * 
+ *
  * @head: pntr to the 1st element in the list
  * @index: index of the node to delete
  *
@@ -37,7 +37,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 	mas = mel->next;
 	mel->next = mas->next;
- 	free(mas);
+	free(mas);
 
 	return (1);
 }
