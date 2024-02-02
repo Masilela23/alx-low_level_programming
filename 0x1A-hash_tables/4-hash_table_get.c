@@ -13,32 +13,19 @@
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	unsigned long int slo = 0;
-	hash_node_t *head = NULL;
+	hash_node_t *node;
+	unsigned long int idex;
 
-	if (ht == NULL || key == NULL)
-	{
+	if (ht == NULL || key == NULL || *key == '\0')
 		return (NULL);
-	}
 
-	slot = hash_djb2((unsigned char *)key) % ht->size;
-
-	if (ht->array[slo] != NULL)
-	{
-		head = ht->array[slo];
-
-		while (head != NULL)
-		{
-			if (strcmp(head->key, key) == 0)
-			{
-				break;
-			}
-			head = head->next;
-		}
-	}
-	else
-	{
+	idex = key_index((const unsigned char *)key, ht->size);
+	if (idex >= ht->size)
 		return (NULL);
-	}
-	return (head->value);
+
+	node = ht->array[idx];
+	while (node && strcmp(node->key, key) != 0)
+		node = node->next;
+
+	return ((node == NULL) ? NULL : node->value);
 }
